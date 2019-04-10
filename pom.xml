@@ -7,10 +7,6 @@
     <groupId>com.ee</groupId>
     <artifactId>ee</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>ee-upms</module>
-        <module>ee-common</module>
-    </modules>
     <packaging>pom</packaging>
 
     <parent>

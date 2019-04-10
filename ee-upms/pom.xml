@@ -13,10 +13,6 @@
     <groupId>com.ee</groupId>
     <artifactId>ee-upms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>ee-upms-common</module>
-        <module>ee-upms-web</module>
-    </modules>
     <packaging>pom</packaging>
 
     <dependencies>
