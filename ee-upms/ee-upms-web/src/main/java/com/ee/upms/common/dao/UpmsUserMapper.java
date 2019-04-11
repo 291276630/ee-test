@@ -2,9 +2,9 @@ package com.ee.upms.common.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.ee.upms.common.model.UpmsUser;
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
-@Repository
+@Mapper
 public interface UpmsUserMapper extends BaseMapper<UpmsUser> {
     /*int deleteByPrimaryKey(Integer id);
 

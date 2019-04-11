@@ -1,6 +1,10 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://112.74.132.118:3306/ee
     username: root
     password: cc_123456_vzb
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:com/ee/upms/common/dao/mapper/*.xml
+  type-aliases-package: com.ee.upms.common.model
