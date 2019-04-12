@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://112.74.132.118:3306/ee
+    username: root
+    password: cc_123456_vzb
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/*.xml
+  type-aliases-package: com.ee.mybatisplus.model
