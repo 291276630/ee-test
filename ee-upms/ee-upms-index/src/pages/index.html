@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>登录</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../assets/layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../assets/layuiadmin/style/admin.css" media="all">
 </head>
-<body>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
 
+    <!-- 头部 -->
+    @include("/common/_header.html"){}
+
+    <!-- 侧边栏 -->
+    @include("/common/_sidebar.html"){}
+
+    <!-- 主体部分 -->
+    @include("/common/_body.html"){}
+
+    <!-- 底部 -->
+    @include("/common/_footer.html"){}
+
+</div>
 </body>
 </html>

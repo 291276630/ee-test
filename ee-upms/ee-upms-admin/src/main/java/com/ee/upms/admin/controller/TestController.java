@@ -1,6 +1,6 @@
 package com.ee.upms.admin.controller;
 
-import com.ee.upms.common.dao.UpmsUserMapper;
+import com.ee.upms.common.upms.dao.UpmsUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
