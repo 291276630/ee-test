@@ -1,6 +1,8 @@
 package com.ee.upms.admin.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import com.ee.common.base.BaseController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,10 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-public class LoginController {
+@RequestMapping("login")
+public class LoginController extends BaseController {
 
-    @GetMapping("/")
-    public Object index(){
+    @RequestMapping("beforeLogin")
+    public Object beforeLogin(){
+        return null;
+    }
+
+    @RequestMapping("login")
+    public Object login(@RequestParam String username, @RequestParam String password, @RequestParam String tempId, @RequestParam String verCode){
         return null;
     }
 }
