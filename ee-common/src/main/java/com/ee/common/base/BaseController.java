@@ -18,19 +18,19 @@ public class BaseController {
     private final static Logger log = LoggerFactory.getLogger(BaseController.class);
 
     @ExceptionHandler
-    public String exceptionHandler(HttpServletRequest request, HttpServletResponse response, Exception e){
+    public Object exceptionHandler(HttpServletRequest request, HttpServletResponse response, Exception e){
         log.error("【统一异常处理】：", e);
         request.setAttribute("e", e);
-        //shiro没有权限
-        if(e instanceof UnauthorizedException){
-            return "/403.html";
-        }
-        //shiro会话过期异常
-        if(e instanceof InvalidSessionException){
-            return "/error.html";
-        }
 
-        return "/error.html";
+        if(e instanceof UnauthorizedException){
+            //没有权限
+            return BaseResult.returnForbidden();
+        }else if(e instanceof InvalidSessionException){
+            //token过期
+            return BaseResult.resultExpire();
+        }else{
+            return BaseResult.returnFailure();
+        }
     }
 
 }
